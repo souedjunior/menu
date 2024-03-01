@@ -1,0 +1,18 @@
+[
+    {
+        "codigo":0,
+        "nome":"Hamburgues"
+    },
+    {
+        "codigo":1,
+        "nome":"Carne na chapa"
+    },
+    {
+        "codigo":2,
+        "nome":"Porções"
+    },
+    {
+        "codigo":3,
+        "nome":"Bebidas"
+    }
+]
