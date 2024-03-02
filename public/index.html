@@ -1,10 +1,35 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
-		<script src="script.js"></script>	
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	</head>
 	<body>
+		<div id="modal" class="hide-modal">
+			<div class="modal-login">
+					<div class="modal-cabecalho"><i class="material-icons" onclick="fecharModal()">close</i></div>
+					<div class="modal-conteudo">
+						<div>
+							<div class="face">
+								<i class="material-icons ">person</i>
+							</div>
+							<div>
+								<input type="text" class="login-input" name="" id="login" placeholder="LOGIN">
+							</div>
+							<div>
+								<input type="password" class="login-input"  name="" id="senha" placeholder="SENHA">
+							</div>
+							<div>
+								<span id="erro-login" class="erro-login"></span>
+							</div>
+							<div>
+								<input type="button" class="botao-input" onclick="logar()" value="ENTRAR">
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
 		<header class="cabecalho">
+			<div class="login"><span onclick="abrirModal()">Entrar</span></div>
 			<div><img class="logo" src="img/icons8-pan-58.png" alt="panela"/></div>
 			<div><span class="nome-logo">Tempeiros do Serrado</span></div>
 			<div class="pesquisa">
@@ -14,39 +39,40 @@
 				</div>
 			</div>
 		</header>
-		<ul class="grupos" id="grupos">
-			<!-- Grupos -->
-			<!--<li class="item-grupo"><span>Espetos</span></li>-->
-		</ul>
-		<main>
-			<span class="titulo-grupos">Recomendações do chefe</span>
-			<ul class="recomendacoes" id="recomendacoes">
-				<!--Itens em promoção-->
 
-				<!--
-				<li class="card-recomendacoes">
-					<img src="img/comida.png" alt="Comida">
-					<div>
-						<div><span class="nome-produto">Espeto de frango com bacon</span></div>
-						<div><span class="preco-produto">R$29,90</span></div>
-					</div>
-				</li>
-				-->
+			<ul class="grupos" id="grupos">
+				<!-- Grupos -->
+				<!--<li class="item-grupo"><span>Espetos</span></li>-->
 			</ul>
-			
-			<div id="produtos" class="produtos">
-				<!--<ul>
-					<li class="card-produtos">
+			<main>
+				<span class="titulo-grupos">Recomendações do chefe</span>
+				<ul class="recomendacoes" id="recomendacoes">
+					<!--Itens em promoção-->
+
+					<!--
+					<li class="card-recomendacoes">
 						<img src="img/comida.png" alt="Comida">
 						<div>
-							<div><span class="nome-produto">Espeto de picanha</span></div>
-							<div><span class="nome-descricao">Espeto de 200g, porções de arroz, farofa, Mandioca cozida</span></div>
+							<div><span class="nome-produto">Espeto de frango com bacon</span></div>
 							<div><span class="preco-produto">R$29,90</span></div>
 						</div>
 					</li>
-				</ul>-->
-			</div>
-			
-		</main>
+					-->
+				</ul>
+				
+				<div id="produtos" class="produtos">
+					<!--<ul>
+						<li class="card-produtos">
+							<img src="img/comida.png" alt="Comida">
+							<div>
+								<div><span class="nome-produto">Espeto de picanha</span></div>
+								<div><span class="nome-descricao">Espeto de 200g, porções de arroz, farofa, Mandioca cozida</span></div>
+								<div><span class="preco-produto">R$29,90</span></div>
+							</div>
+						</li>
+					</ul>-->
+				</div>
+			</main>
 	</body>
+	<script src="script.js"></script>	
 </html>

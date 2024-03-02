@@ -1,5 +1,6 @@
 body{
     font-family: 'Verdana', sans-serif;
+    margin: 0px;
 }
 
 main{
@@ -12,13 +13,97 @@ ul{
     margin: 0;
 }
 
+.login{
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.login span{
+    color: white;
+    font-size: 12px;
+}
+
+#modal{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    justify-content: center; /* Alinea horizontalmente en el centro */
+    align-items: center; /* Alinea verticalmente en el centro (opcional) */
+    height: 100vh; /* Altura del contenedor, ajusta según tus necesidades */
+}
+
+.modal-login{
+    background-color: white;
+    width: 90%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.modal-cabecalho i {
+    display: flex;
+    float: right;
+    cursor: pointer;
+}
+
+.modal-conteudo {
+    display: flex;
+    justify-content: center; /* Alinea horizontalmente en el centro */
+    align-items: center;
+    padding-top: 20px;
+}
+
+.modal-conteudo .face{
+    color: black;
+    text-align: center;
+}
+
+.modal-conteudo .face .material-icons{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.login-input{
+    margin: 5px;
+    border-style: none;
+    font-size: 14px;
+    border-bottom: 2px solid #c5c5c5;
+}
+
+.login-input::placeholder {
+    color: #8f8f8f; /* Altera a cor do placeholder para vermelho */
+}
+
+.botao-input{
+    padding: 5px;
+    background: #0b0e38;
+    color:white;
+    width: 100%;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.hide-modal{
+    display:none !important;
+}
+
+.erro-login{
+    color: red;
+    font-size: 10px;
+}
+
+.erro-input{
+    border-bottom: 2px solid #ff0000;
+}
+
 .cabecalho{
     background: #0b0e38;
-    height: 100px;
+    height: 140px;
     display: block;
     text-align: center;
     margin-bottom: 30px;
-
 }
 
 .logo {

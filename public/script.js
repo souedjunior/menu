@@ -179,4 +179,48 @@ function formatarMoeda(valor){
     return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }
 
+function logar(){
+
+    //Instanciando os inputs do HTML
+    var login = document.getElementById('login');
+    var senha = document.getElementById('senha');
+    var textoErro = document.getElementById('erro-login');
+
+    
+    textoErro.innerText = ""; //zerando de erro
+    login.style.borderBottom = "2px solid #c5c5c5"; //Deixando a cor patrão do input
+    senha.style.borderBottom = "2px solid #c5c5c5"; //Deixando a cor patrão do input
+
+
+    //Se um dos campos for vazio
+    if(login.value !== "" || senha.value !== ""){
+
+        //Se o login e a senha estiver correta
+        if(login.value == "teste" && senha.value == "123"){
+            
+        }else{
+            senha.value = "";
+            textoErro.innerText = "Login ou Senha incorreto"; //Imprimir mensagem na tela
+            login.style.borderBottom = "2px solid red"; //input login vermelho
+            senha.style.borderBottom = "2px solid red"; //input senha vermelho
+        }
+    }else{
+        senha.value = "";
+        textoErro.innerText = "Campos Obrigatorios"; //Imprimir mensagem na tela
+        login.style.borderBottom = "2px solid red"; //input login vermelho
+        senha.style.borderBottom = "2px solid red"; //input senha vermelho
+    }
+
+}
+
+function abrirModal(){
+    var item = document.getElementById('modal');
+    item.className = 'show-modal';
+}
+
+function fecharModal(){
+    var item = document.getElementById('modal');
+    item.className = 'hide-modal';
+}
+
 init();
