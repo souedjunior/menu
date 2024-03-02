@@ -250,7 +250,6 @@ ul{
     display: flex;
     float: left;
     margin: 5px;
-    width: 95%;
     height: 100px;
     border-radius: 10px;
     box-shadow:  5px 5px 10px rgb(156, 156, 156);
@@ -288,4 +287,17 @@ ul{
     left: 0;
 }
 
+/* Estilos para telas maiores que 768px (notebook) */
+@media screen and (min-width: 768px) {
+    .card-produtos {
+        width: calc(33.33% - 20px) /* 33.33% de largura, subtraindo o espaçamento */
+    }
+}
 
+
+/* Estilos para telas menores que 768px (celular) */
+@media screen and (max-width: 767px) {
+    .card-produtos {
+        width: calc(90% - 5px); /* 50% de largura, subtraindo o espaçamento */
+    }
+}
