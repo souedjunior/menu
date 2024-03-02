@@ -35,11 +35,16 @@
 			<div class="pesquisa">
 				<div>
 					<img src="img/icons8-pesquisar-24.png" alt="pesquisar">
-					<input type="text" placeholder="Pesquise aqui" />
+					<input id="pesquisa" type="text" placeholder="Pesquise aqui" onkeyup="pesquisarProduto()"/>
 				</div>
 			</div>
 		</header>
 
+		<div id="lista-pesquisa" class="produtos">
+
+		</div>
+
+		<div id="lista-produtos">
 			<ul class="grupos" id="grupos">
 				<!-- Grupos -->
 				<!--<li class="item-grupo"><span>Espetos</span></li>-->
@@ -73,6 +78,7 @@
 					</ul>-->
 				</div>
 			</main>
+		</div>
 	</body>
 	<script src="script.js"></script>	
 </html>
