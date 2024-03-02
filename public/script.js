@@ -4,17 +4,14 @@ function init(){
     //Carregando todos os produtos
     listarProdutos();
 
-    // Este código será executado quando o documento terminar de carregar
-    window.onload = function() {
-        //chamar categoria
-        carregarGrupos();
+    //chamar categoria
+    carregarGrupos();
 
-        //chamar produtos em promoção
-        carregarProdutosPromocao();
+    //chamar produtos em promoção
+    carregarProdutosPromocao();
 
-        //chamar produtos por categoria
-        carregarCategoria();
-    };
+    //chamar produtos por categoria
+    carregarCategoria();
 
 }
 
@@ -24,7 +21,6 @@ function listarProdutos(){
     xhr.onload = function() {
         if (xhr.status === 200) {
             produtos = JSON.parse(xhr.responseText);
-            console.log(produtos.length)
         } else {
             console.error("Falha ao carregar json:" + xhr.status);
         }

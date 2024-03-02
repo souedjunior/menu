@@ -55,24 +55,29 @@ ul{
     padding-top: 20px;
 }
 
-.modal-conteudo .face{
-    color: black;
+.modal-conteudo .titulo-login{
+    color: #0b0e38;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.modal-conteudo .face .material-icons{
-    font-size: 30px;
-    margin: 10px;
+.modal-conteudo .material-icons{
+    font-size: 20px;
+    color: #8f8f8f;    
 }
 
 .login-input{
-    margin: 5px;
+    display: flex;
+}
+
+.login-input input{
+    margin: 0px 0px 10px 5px ;
     border-style: none;
     font-size: 14px;
     border-bottom: 2px solid #c5c5c5;
 }
 
-.login-input::placeholder {
+.login-input input::placeholder {
     color: #8f8f8f; /* Altera a cor do placeholder para vermelho */
 }
 
@@ -82,7 +87,7 @@ ul{
     color:white;
     width: 100%;
     cursor: pointer;
-    margin: 5px;
+    margin-top: 5px;
 }
 
 .hide-modal{
